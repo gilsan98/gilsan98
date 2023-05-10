@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li{list-style: none;}
+    .wrap {background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+      display: flex;
+      flex-direction: column;
+
+    }
+    .myTitle{
+      width: 500px;
+      height: 500px;
+      background-image: url(/img/아이유.jpg);
+      background-repeat: calc(no-repea);
+      background-size: cover;
+      background-position: center;
+      
+    }
+    #textBox {
+      text-align: center;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: ;
+      background-color 
+      width: 300px;
+      color:
+    }
+    label {
+      display: inline-block;
+      width:auto
+      margin:auto50
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <div class="myTitle">
+    <div id="textBox">
+      <h1>로그인 페이지</h1>
+      <h4>ID, PW를 입력해주세요</h4>
+    </div>
+  </div>
+  <div id="join">
+    <ul>
+      <li>
+        <label for="id">ID</label>
+        <input type="text">
+      </li>
+      <li>
+        <label for="pw">PW : </label>
+        <input type="text">
+      </li>
+    </ul>
+  </div>
+  <div id="logBox">
+    <button>회원가입</button><button>login</button>
+  </div>
+</div>
+</body>
+</html>
