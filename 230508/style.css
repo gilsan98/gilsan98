@@ -1,0 +1,21 @@
+table, th, td {
+  border: 1px solid #000;
+}
+tr > td:nth-child(even) {
+  width: 30px;
+}
+tr > td:nth-child(odd) {
+  width: 150px;
+}
+tr {
+  height: 30px;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+td {
+  width: 100px;
+  text-align: center;
+  font-weight: bold;
+}
