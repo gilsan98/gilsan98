@@ -1,0 +1,27 @@
+<li>1. html</li>
+<li>2. css</li>
+<li>3. javascript</li>
+
+<li>dfsa</li>
+<li>lkfjaskldjf</li>
+<li>dasfsdf</li>
+
+<h1>HTML</h1> asd;lkfjaskldjf; <strong><u>html</u></strong> klj;lsdj;flksjadklfj;sadjfsk;ldjf;lkdsajf;klsasas
+<h1>This is heading 1</h1>
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+Overview
+This HTML usage data comes from 11.3 million index pages gathered from top twenty Google results, for about 30 million keywords - chosen by keyword volume. To learn more about this data, visit the FAQ section.
+<br><br><br><img src="coding.jpg" width ="250"><p>HTML study, An average web page uses</p> <p>thirty-two</p> different element types
+HTML Study, the 32 elements used on most pages
+Total 11,264,652 pages
+Doctype
+The doctype is the very first line of a HTML document and it specifies which version of (X)HTML that page is using.
+HTML study, doctype element
+From 10,359,566 elements
+Basic elements and metadata
+The html, which is known as the root element, wraps the contents of a web page and it can be found immediately after the doctype declaration. Metadata contains information about the page like styles, scripts and data to help search engines or browsers to use and render the page.
+HTML study, basic elements and metadata
+From 401,982,588 elements
+Content sectioning
+The content sectioning elements allow you to organize the contents into logical pieces.
