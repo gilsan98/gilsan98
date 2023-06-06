@@ -1,10 +1,10 @@
-@import url('/reset.css');
+@import url('http://dhrlftks.dothome.co.kr/reset.css');
 
 /* Header */
 #main_header {
   border: 1px solid #ccc;
   height: 45px;
-  background: url(img/header_background.png);
+  background: url(http://dhrlftks.dothome.co.kr/header_background.png);
   position: relative;
   text-align: center;
   line-height: 45px;
@@ -20,14 +20,14 @@
   width: 62px;
   left: 5px;
   top: 7px;
-  background: url(img/sprites.png) -0 -0;
+  background: url(http://dhrlftks.dothome.co.kr/sprites.png) -0 -0;
   text-indent: -9999px;
 }
 #main_header > .right {
   width: 32px;
   right: 5px;
   top: 7px;
-  background: url(img/sprites.png) -62px -0;
+  background: url(http://dhrlftks.dothome.co.kr/sprites.png) -62px -0;
   text-indent: -9999px;
 }
 #main_header > h1 {
