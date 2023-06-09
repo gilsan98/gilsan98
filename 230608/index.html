@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/fleximg/logo.png" alt="nike logo">
+    </div>
+    <div class="gnb">
+      <a href="#">Home</a>
+      <a href="#">About us</a>
+      <a href="#">Service</a>
+      <a href="#">Contact us</a>
+      <a href="#">Blog</a>
+    </div>
+    <div class="search">
+      <input type="search" placeholder="Search">
+    </div>
+  </header>
+</body>
+</html>
+
+<!-- 
+  flex 사용시 유의사항
+1. 부모요소에서 사용하는 속성
+=display: flex 
+=수평정렬: justify-content (space-around, space-between)
+=수직정렬: align-items
+정렬방향설정: flex-direction (column, row  - reverse)
+전체너비 값 변경에 의한 각각의 아이템들을 밑으로 정렬하고자 할 때: flex-wrap
+(화면 사이즈가 줄어들 때 박스크기가 줄어들지 않고 밑칸으로 내려감)
+=flex-flow: flex-direction, flex-wrap (해당 요소 값을 한번에 표기하고 싶을 때)
+
+2. 자식요소에서 사용하는 속성
+=flex-grow: 각각의 아이템들이 차지하는 비율(flex-grow: 1)
+=flex-shirnk: 전체 너비가 축소할 때, 비례해서 각각의 아이템 요소들의 너비값도 줄어들게 하는 설정
+=flex: flex-grow, flew-shirnk 등의 값을 한줄로 표기할 때 사용
+=order: flex의 적용을 받는 아이템 요소들의 순서를 정의할 때
+=gap: flex의 적용을 받는 아이템 요소들의 간격을 설정할 때
+-->

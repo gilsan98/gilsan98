@@ -1,0 +1,56 @@
+@import url('/reset.css');
+
+body {
+  margin: 0;
+  background-color: #eee;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  padding: 20px;
+}
+.logo {
+  flex: 1;
+}
+.gnb {
+  display: flex;
+  justify-content: center;
+  flex: 6;
+}
+.gnb a {
+  margin: 0 20px;
+}
+.search {
+  flex: 1;
+  text-align: center;
+}
+input::placeholder {
+  text-align: center;
+}
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+@media all and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  .gnb a {
+    margin: 0 5px;
+  }
+  .logo {
+    text-align: center;
+  }
+  .search {
+    text-align: center;
+  }
+}
