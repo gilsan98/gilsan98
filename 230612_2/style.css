@@ -1,0 +1,148 @@
+@import url('/reset.css');
+
+body {
+  display: flex;
+  justify-content: center;
+}
+section {
+  /* border: 1px solid #ccc; */
+  width: 950px;
+  display: flex;
+  flex-direction: column;
+}
+.gnb {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 30px 0;
+}
+.gnb a {
+  margin: 15px;
+  position: relative;
+  padding-bottom: 8px;
+}
+.gnb a:last-child {
+  margin-right: 0;
+}
+.gnb a::after {
+  content: "";
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  background-color: #000;
+  width: 0;
+  height: 2px;
+}
+.gnb a:hover::after {
+  width: 100%;
+  transition-duration: 0.3s;
+}
+.search-box {
+  display: flex;
+  justify-content: space-between;
+}
+.search-box input {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  font-size: 18px;
+  width: 300px;
+  background: url(/flex/3/search.png)no-repeat center right;
+  background-size: 22px;
+  box-sizing: border-box;
+  outline: none;
+}
+.search-box button {
+  border: none;
+  background-color: crimson;
+  color: #fff;
+  padding: 13px 60px;
+  border-radius: 6px;
+  font-size: 18px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.search-box input:focus::placeholder {
+  visibility: hidden;
+}
+.search-box button:hover {
+  background-color: #000;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.item {
+  width: 310px;
+  height: 200px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.item img {
+  width: 100%;
+}
+.desc {
+  position: absolute;
+  width: 100%;
+  bottom: -60px;
+  left: 0;
+  color: #eee;
+  padding: 10px;
+  box-sizing: border-box;
+  transition-duration: 0.3s;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.desc h6 {
+  font-size: 15px;
+}
+.like {
+  display: flex;
+  justify-content: space-between;
+}
+.like span {
+  font-size: 13px;
+}
+.like span:nth-child(1) .fas {
+  color: crimson;
+}
+.item:hover .desc {
+  bottom: 0;
+}
+
+@media all and (max-width: 767px) {
+  section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .gnb {
+    justify-content: center;
+  }
+  .search-box {
+    flex-direction: column;
+  }
+  .search-box input {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .item {
+    width: 100%;
+    height: 10%;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .item {
+    width: 49%;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+}
