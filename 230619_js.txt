@@ -1,0 +1,259 @@
+// 산술연사자 (* + - / %)
+
+// let strA = ("doit");
+// let strB = ("javascript");
+
+// result = strA + strB;
+// console.log(result);
+
+// let strC = "100";
+// let numA = 200;
+// let numB = 300;
+// result2 = strC + numA + numB;
+// console.log(result2);
+
+// 대입연산자
+
+// let num1 = 10;
+// let num2 = 3;
+
+// num1 %= num2;
+// num1 = num1 +num2
+// console.log(num1);
+
+
+// 증감연산자
+// let num1 = 10;
+// let num2 =20;
+// let result;
+
+// num1--;
+// console.log(num1);
+// num1++;
+// console.log(num1);
+
+// result = num2++;
+// console.log(result);
+// console.log(num2);
+
+// result = ++num2;
+// console.log(result);
+// console.log(num2);
+
+
+// 비교연산자
+// A > B
+// B < A
+// A >= B
+// A == B (A와 B는 같다) 
+// A != B (A와 B는 같지 않다)
+
+//let k = 10;
+//let m = "10";
+
+//k == m //느슨한 비교연산자
+//k === m //엄격한 비교연산자
+
+//논리연산자
+//|| : 버티컬바 (*or 연산자) 하나라도 참이면 참
+//&& : (and 연산자) 모두가 참이어야 참
+//! : (not 연산자)
+
+let a = 10;
+let b = 20;
+let c = 30;
+let d = 40;
+
+let result;
+result = a < b && b < c && c > d;
+console.log(result);
+
+//삼항조건연산자
+let e = 10;
+let f = 3;
+
+let result = e < f ? "javascript" : "hello"
+console.log(result);
+
+//적정체중 = 평균체중을 구하는 프로그램 개발!!
+//적정체중 공식 = {본인 키 - 100} * 0.9
+
+// let name = prompt("이름을 말씀해주세요🤣");
+// let height = prompt("키가 어떻게 되세요?✌");
+// let weight = prompt("몸무게가 어떻게 되세요?😉");
+
+// let normal_w = (height - 100) * 0.9;
+// let result = weight >= normal_w -5 && weight <= normal_w + 5;
+// result = result ? "적정체중이시네요! 축하합니다." : "적정체중이 아닙니다."
+
+// console.log(name + "님은 " + result);
+
+
+
+//나이 계산 프로그램
+// let birthYear = prompt("태어난 년도가 어떻게 되시죠?");
+// let currentYear = 2023;
+// let age = currentYear - birthYear + 1;
+// alert("당신의 나이는 " + age + "세 입니다.");
+
+//지출 비용 초과여부를 구하는 프로그램
+//교통비, 식비, 음료비 => 1만원보다 미만이면, 돈관리 잘하셨습니다.
+//교통비, 식비, 음료비 => 1만원을 초과한다면, 조금 더 절약해주세요.
+let traffic = prompt("교통비를 입력해주세요");
+let eat = prompt("식비를 입력해주세요");
+let drink = prompt("음료비를 입력해주세요");
+
+let normal = Number(traffic) + Number(eat) + Number(drink);
+let result = normal < 10000; 
+let result1 = 10000 - normal;
+let result2 = normal - 10000;
+
+result = result ? result1 + "원 남았어요! 돈관리 잘하셨습니다." : result2 + "원 초과! 조금 절약해주세요!"
+
+
+console.log(result);
+
+
+제어문
+-조건문 : if
+-선택문 : if~else / switch~cas
+-반복문 : for / while / do while
+
+// let walkAmount = prompt("하루동안 걷는 양이 어떻게 되시죠?");
+// if(walkAmount1 >= 1000) {
+//   console.log("매우 좋은 습관이에요!");
+// }
+
+// let num = prompt("당신이 좋아하는 숫자는?");
+
+// if(num % 2 === 0) {
+//   console.log("당신이 좋아하는 숫자는 짝수 입니다.");
+// } else {
+//   console.log("당신이 좋아하는 숫자는 홀수 입니다.");
+// }
+
+// let result = confirm("정말로 회원을 탈퇴하시겠습니까?");
+
+// if(result) {
+//   console.log("탈퇴처리 되었습니다.");
+// } else  {
+//   console.log("탈퇴취소 되었습니다.");
+// }
+
+// let month = prompt("현재는 몇 월 입니까?");
+
+// if(month >= 9 && month <= 11) {
+//   console.log("독서의 계절 가을이네요");
+// } else if(month >= 6 && month <= 8) {
+//   console.log("여행가기 좋은 여름이네요");
+// } else if(month >= 3 && month <= 5) {
+//   console.log("햇살 가득한 봄이네요"); 
+// }  else {
+//   console.log("스키의 계절 겨울이네요");
+// }
+
+// let site = prompt("네이버, 다음, 네이트, 구글 중 즐겨사용하는 포털사이트는 어디인가요?");
+
+// let url;
+
+// switch(site) {
+//   case "구글" : url = "https://www.google.com";
+//   break;
+//   case "다음" : url = "https://www.daum.net" 
+//   break;
+//   case "네이버" : url = "https://www.naver.com"
+//   break;
+//   case "네이트" : url = "https://www.nate.com"
+//   break;
+//   default : alert("보기 중에 없는 사이트 입니다.")
+// }
+
+// if(url) {
+//   location.href = url;
+// }
+
+
+
+//로그인 아이디 : abcd
+//로그인 비밀번호 : 1234
+
+//사용자로 하여금, 아이디와 비밀번호를 요청하고, 사용자가 입력한 값이 위 로그인 아이디 및 비밀번호와 일치한다면, 반갑습니다 라는 콘솔 메세지를 출력 만약 둘중에 하나라도 틀렸다면, 아이디 혹은 비밀번호가 일치하지 않습니다. 라고 콘솔 메세지에 출력해주세요.
+
+// let id = "abcd";
+// let pw = 1234;
+
+// let user_id = prompt("아이디를 입력해주세요");
+// if(id == user_id) {
+//   let user_pw = prompt("비밀번호를 입력해주세요");
+
+//   if(pw == user_pw) {
+//     console.log(user_id + "님 반갑습니다.");
+//   } else {
+//     alert("비밀번호가 일치하지 않습니다.");
+//     location.reload();
+//   } 
+// } else {
+//     alert("아이디가 일치하지 않습니다.");
+//     location.reload();
+// }
+
+//반복문
+// for(let i = 1; i <= 10; i++) {
+//   console.log("반복" + i);
+// };
+
+//CSS 포함 
+for(let i = 1; i <= 100; i++) {
+  if(i % 5 == 0 && i % 7 != 0) {
+    document.write("<p class='red'>" + i + "</p>")
+  } else if(i % 7 == 0 && i % 5 != 0) {
+    document.write("<p class='green'>" + i + "</p>")
+  } else if(i % 7 ==0 && i % 5 == 0) {
+    document.write("<p class='aqua'>" + i + "</p>")
+  }
+}
+
+let i = 20;
+while(i >= 10) {
+  if(i % 2 == 0) {
+    document.write("<p class='blue'>" + i + "</p>");
+  } else {
+    document.write("<p class='red'>" + i + "</p>");
+  }
+  i--;
+}
+
+
+//do while 뒤가 참이든 거짓이든 1바퀴는 돌아감
+let i = 10;
+do {
+  console.log("hello!");
+  i--;
+} while(i < 5);
+
+
+
+//중첩 for문 구구단
+
+for(let a = 1; a <= 9; a++) {
+  document.write("<h2>" + "[" + a + "단]" + "</h2>");
+  for(let b = 1; b <= 9; b++) {
+    document.write(a + "*" + b + "=" + (a*b));
+    document.write("<br/>")
+  };
+};
+
+
+let num = 1;
+let t = "<table border=1>";
+for(let i = 1; i <= 5; i++) {
+  t += "<tr>";
+  for(let k =1; k <= 5; k++) {
+    t += "<td>" + num + "</td>";
+    num++;
+  }
+  t += "</tr>"
+}
+t += "</table>";
+
+document.write(t);
