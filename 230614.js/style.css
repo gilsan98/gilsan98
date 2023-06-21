@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+#contents {
+  width: 450px;
+  margin: 15% auto;
+}
+#contents img {
+  width: 160px;
+  float: left;
+  margin-top: 15px;
+}
+ul {
+  padding-top: 40px;
+}
+li {
+  margin-bottom: 10px;
+}
+li > label {
+  width: 80px;
+  float: left;
+  text-align: center;
+}
+input[type=text] {
+  width: 120px;
+  padding: 5px 10px;
+  margin: 0 5px 0 10px;
+}
+button {
+  padding: 10px 40px;
+  border: 1px solid #ccc;
+}
+li:nth-child(3) {
+  margin-top: 20px;
+  text-align: center;
+}
+#showResult {
+  border: 1px solid #ccc;
+  font-style: 30px;
+  margin-top: 20px;
+}
