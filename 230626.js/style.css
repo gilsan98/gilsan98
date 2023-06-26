@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  column-gap: 10px;
+  font-size: 48px;
+  font-weight: bold;
+}
+.time {
+  width: 80px;
+  text-align: center;
+  letter-spacing: 5px;
+}
