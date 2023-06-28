@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <form name="order">
+      <fieldset>
+        <legend>상품정보</legend>
+        <ul>
+          <li>
+            <label for="product" class="field">상품: </label>
+            <input type="text" class="input-box" id="product">
+          </li>
+          <li>
+            <label for="prod-num" class="field">개수: </label>
+            <input type="text" class="input-box" id="prod-num">
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>주문정보</legend>
+        <ul>
+          <li>
+            <label for="order-name" class="field">이름: </label>
+            <input type="text" class="input-box" id="order-name">
+          </li>
+          <li>
+            <label for="order-tel" class="field">연락처: </label>
+            <input type="text" class="input-box" id="order-tel">
+          </li>
+          <li>
+            <label for="order-addr" class="field">주소: </label>
+            <input type="text" class="input-box" id="order-addr">
+          </li>
+        </ul>
+      </fieldset>
+      <button type="submit" class="order">주문하기</button>
+    </form>
+  </div>
+</body>
+</html>
