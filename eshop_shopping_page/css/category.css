@@ -1,0 +1,30 @@
+.sort select {
+  width: 50%;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+}
+.sort select option {
+  height: 50px;
+  font-size: 16px;
+}
+.ui-selectmenu-button.ui-button{
+  width: 50%;
+  border: none;
+  height: 50px;
+  line-height: 50px;
+  box-sizing: border-box;
+  background: none;
+}
+.ui-selectmenu-icon.ui-icon {
+  margin-top: 11px;
+}
+header {
+  position: relative;
+}
+header h2 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

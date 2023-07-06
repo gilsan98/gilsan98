@@ -1,0 +1,17 @@
+.category_list{
+  padding:26px;
+}
+.category_list li{
+  margin-right: 27px;
+}
+.category_list li a{
+  color: #C2C4CA;
+  font-size: 24px;
+  font-family: 'SF UI Display Heavy';
+  line-height: 45px;
+  letter-spacing: 0.192px;
+  text-transform: uppercase;
+}
+.category_list li.slick-current a {
+  color: #000;
+}
