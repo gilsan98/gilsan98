@@ -1,0 +1,52 @@
+@import url('/reset.css');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #639;
+  padding: 15px;
+  border: none;
+  outline: none;
+  color: #fff;
+  
+}
+button.active{
+  transform: translate(-80px) rotate(45deg);
+  margin-top: 70px;
+  background: #000;
+  border-radius: 20%;
+}
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #639;
+  height: 100vh;
+  padding: 2em;
+  transform: translateX(100%);
+}
+nav.active {
+  transform: translateX(0);
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav ul li {
+  padding: 1em 0;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
