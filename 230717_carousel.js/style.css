@@ -1,0 +1,34 @@
+@import url('/reset.css');
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+p {
+  margin: 20px;
+  font-size: 2em;
+
+}
+#container {
+  padding: relative;
+  width: 600px;
+  height: 300px;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  font-size: 2em;
+  padding: 10px;
+  background: #ddd;
+  color: #222;
+  opacity: 0.2;
+  z-index: 100;
+}
+.arrow:hover {
+  opacity: 1;
+}
