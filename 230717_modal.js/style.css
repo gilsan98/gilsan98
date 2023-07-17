@@ -1,0 +1,75 @@
+@import url('/reset.css');
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 10px 20px;
+  border-style: 1px solid #ccc;
+  background-color: #06f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+p {
+  margin: 20px;
+  font-size: 2em;
+}
+#modal-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 80vw;
+  height: 80vh; */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+#modal-box.active {
+  display: flex;
+  background-color: #fff;
+}
+#modal-contents {
+  background-color:#fff;
+  width: 350px;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+#modal-contents button {
+  background-color: #fff;
+  color: #ccc;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+#desc {
+  margin: 10px 20px;
+}
+p {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
